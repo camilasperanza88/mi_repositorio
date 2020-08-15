@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* generales */
+html {
+  /* etiqueta raíz */
+  font-size: 62.5%; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Montserrat'; }
+
+/* header */
+.la {
+  background-image: url("images/la.jpg"); }
+
+.chicago {
+  background-image: url("images/chicago.jpg"); }
+
+.ny {
+  background-image: url("images/ny.jpg"); }
+
+@mixing header {
+  background-color: #001F3F;
+  width: 100%;
+  height: 100px;
+  padding: 10px; }
+
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem; }
+
+.flexMenu li a {
+  text-decoration: none;
+  color: #4c00ff; }
+
+header h1 {
+  color: #0095ff;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px; }
+
+/*Grilla */
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+ "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+ "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-color: #EFF4F7; }
+
+.noticiaTres {
+  grid-area: noticiaTres;
+  background-color: #73CAEF; }
+
+.noticiaDos {
+  grid-area: noticiaDos;
+  background-color: #89FFFB; }
+
+.noticiaCuatro {
+  grid-area: noticiaCuatro;
+  background-color: #41E2DD; }
+
+.noticiaCinco {
+  grid-area: noticiaCinco;
+  background-color: #50D8C8; }
+
+.noticiaSeis {
+  grid-area: noticiaSeis;
+  background-color: #53B4F4; }
+
+.noticiaSiete {
+  grid-area: noticiaSiete;
+  background-color: #CDE0E4; }
+
+/* Footer */
+footer {
+  background-color: #e1eef7;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0; }
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center; }
